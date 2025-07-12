@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toko hoodie</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Toko hoodie</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Beranda</a></li>
+                    <li><a href="#featured-products">Produk Unggulan</a></li>
+                    <li><a href="#search-section">Cari Produk</a></li>
+                    <li><a href="#contact">Kontak</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="featured-products">
+            <h2>Produk Unggulan </h2>
+            <div class="product-list-hover">
+                <div class="product-card-hover" data-product-id="P001">
+                    <img src="hoodie 1.jpg" alt="Kemeja Pria">
+                    <div class="product-info">
+                        <h3>hoodie chmb 1</h3>
+                        <p class="price">Rp 185.000</p>
+                        <p class="short-desc">Hoodie kasual dengan bahan lembut dan hangat. Desain simpel, cocok untuk sehari-hari.</p>
+                        <button class="add-to-cart-btn" onclick="alert('Produk hoodie chmb 1 ditambahkan ke keranjang ')">beli</button>
+                    </div>
+                </div>
+
+                <div class="product-card-hover" data-product-id="P002">
+                    <img src="hoodie 2.jpeg" alt="Sepatu Wanita">
+                    <div class="product-info">
+                        <h3>hoodie chmb 2</h3>
+                        <p class="price">Rp 320.000</p>
+                        <p class="short-desc">Hoodie kasual dengan bahan lembut dan hangat. Desain simpel, cocok untuk sehari-hari.</p>
+                        <button class="add-to-cart-btn" onclick="alert('Produk hoodie chmb 2 ditambahkan ke keranjang ')">beli</button>
+                    </div>
+                </div>
+
+                 <div class="product-card-hover" data-product-id="P003">
+                    <img src="hoodie 3.jpg" alt="Tas Laptop">
+                    <div class="product-info">
+                        <h3>hoodie chmb 3</h3>
+                        <p class="price">Rp 299.000</p>
+                        <p class="short-desc">Hoodie kasual dengan bahan lembut dan hangat. Desain simpel, cocok untuk sehari-hari.</p>
+                        <button class="add-to-cart-btn" onclick="alert('Produk hoodie chmb 3 ditambahkan ke keranjang ')">beli</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="search-section">
+            <h2>Cari Produk</h2>
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="Cari berdasarkan nama produk...">
+                <button onclick="searchProducts()">Cari</button>
+            </div>
+            <div id="searchResults" class="product-list">
+                <p id="noResults" style="display: none; text-align: center; margin-top: 20px;">Tidak ada produk ditemukan.</p>
+            </div>
+        </section>
+
+        <section id="product-gallery-example" style="margin-top: 50px;">
+            <h2>Galeri Gambar Produk (Contoh)</h2>
+            <div class="gallery-container">
+                <div class="main-image">
+                    <img id="mainProductImage" src="hoodie 5.jpg" alt="Gaun Pesta Utama">
+                </div>
+                <div class="thumbnail-images">
+                    <img class="thumbnail" src="hoodie 1.jpg" alt="Gaun 1" onclick="changeMainImage(this.src)">
+                    <img class="thumbnail" src="hoodie 2.jpeg" alt="Gaun 2" onclick="changeMainImage(this.src)">
+                    <img class="thumbnail" src="hoodie 3.jpg" alt="Gaun 3" onclick="changeMainImage(this.src)">
+                    <img class="thumbnail" src="hoodie chmb 4.jpg" alt="Gaun 4" onclick="changeMainImage(this.src)">
+                </div>
+            </div>
+            <h3 style="text-align: center; margin-top: 20px;">hoodie chmb</h3>
+            <p style="text-align: center; color: #e67e22; font-weight: bold; font-size: 1.5em;">Rp 150.000 -350.000</p>
+            <p style="text-align: center; width: 70%; margin: 0 auto; line-height: 1.6; color: #555;">Hoodie CHMB hadir dengan desain kasual dan stylish, cocok dipakai untuk kegiatan sehari-hari maupun nongkrong santai. Terbuat dari bahan fleece premium yang lembut, hangat, dan nyaman dipakai dalam segala cuaca. Tersedia dalam berbagai ukuran dan warna kekinian.</p>
+        </section>
+
+
+        <section id="contact" style="margin-top: 50px;">
+            <h2>Hubungi Kami</h2>
+            <form class="contact-form">
+                <label for="name">Nama:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Pesan:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit" onclick="alert('Terima kasih, pesan Anda telah kami terima! ')">Kirim Pesan</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Toko hoodie. Semua hak dilindungi.</p>
+            <p>Email:Vinsarifin820@gmail.com | Telepon: +62 83895304736 | Alamat: jl.babakan jeunjing desa cangkuang kecamatan rancaekek kota bandung</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
